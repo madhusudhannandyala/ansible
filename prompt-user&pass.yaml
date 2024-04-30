@@ -1,6 +1,6 @@
 - name: reading username and password from prompt
   hosts: localhost
-  var_prompt:
+  vars_prompt:
   - name: USERNAME
     prompt: enter the username
     private: false
