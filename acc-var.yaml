@@ -1,0 +1,8 @@
+- name: print info
+  hosts: localhost
+  vars_files:
+  - decl-var.yaml
+  tasks:
+  - name: accesing var another yaml vars_files:
+    ansible.builtin.debug:
+      msg: "i am learning {{course}} from {{trainer}} duration {{duration}}"
