@@ -10,6 +10,6 @@
       course: "devops"
     ansible.builtin.debug:
       msg: "hi i am learning {{course}} from {{trainer}} and duration {{duration}}"
-  tasks:
+  - name: print info at play-level
     ansible.builtin.debug:
       msg: "hi i am learning {{course}} from {{trainer}} and duration {{duration}}"    
