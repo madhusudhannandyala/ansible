@@ -1,5 +1,5 @@
 - name: datatypes
-  hosts: localhosts
+  hosts: localhost
   vars:
     Course: devops with aws
     Tools: 
