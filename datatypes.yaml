@@ -1,0 +1,17 @@
+- name: datatypes
+  hosts: localhosts
+  vars:
+    course: devops with aws
+    tools: 
+    - linus
+    - aws
+    - devops
+    experience:
+      devops: 2
+      aws: 1
+    realproject: true
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "course{{course}} tools learned {{tools}} project experience {{experience}} real{{realproject}}"
+        
