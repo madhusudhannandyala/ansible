@@ -4,6 +4,7 @@
     wishes: "from play-level"
   vars_files: 
   - decl-var.yaml
+  vars_prompt:
   - name: prompt level
     prompt: please enter wishes
     private: false
