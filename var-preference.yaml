@@ -11,5 +11,5 @@
   - name: check preference
     vars:
       wishes: "from task play-level"
-      ansible.builtin.debug:
-        msg: "{{wishes}}"      
+    ansible.builtin.debug:
+      msg: "{{wishes}}"      
