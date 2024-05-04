@@ -3,10 +3,10 @@
   become: yes
   tasks:
   - name: installing packages from loop
-    ansible.builtin.dnf:
-    name: "{{item}}"
-    state: latest
-  loop:
-  - mysql
-  - nginx
-  - postfix  
+    ansible.builtin.dnf:    
+      name: "{{item}}"
+      state: latest
+    loop:
+    - mysql
+    - nginx
+    - postfix  
